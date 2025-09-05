@@ -22,7 +22,6 @@ face_cascade = cv2.CascadeClassifier(haar_file)
 model = cv2.face.LBPHFaceRecognizer_create()
 model.read(model_file)
 
-# Load attendance sheet or create if not exists
 if os.path.exists(excel_file):
     df = pd.read_excel(excel_file)
 else:
