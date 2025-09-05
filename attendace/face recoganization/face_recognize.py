@@ -5,12 +5,11 @@ import pandas as pd
 import pyttsx3
 from datetime import datetime
 
-# Initialize Text-to-Speech
+
 engine = pyttsx3.init()
 engine.setProperty('rate', 150)
 engine.setProperty('volume', 0.9)
 
-# Load Haar cascade & trained model
 haar_file = os.path.join(os.path.dirname(__file__), "haarcascade_frontalface_default.xml")
 model_file = 'face_model.xml'
 excel_file = 'attendance.xlsx'
